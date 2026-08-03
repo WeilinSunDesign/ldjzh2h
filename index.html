@@ -230,18 +230,19 @@
   .map-node{cursor:default;transition:opacity .15s}
   .map-node:hover{opacity:.72}
 
-  .age-journey{position:relative;margin:12px 0 18px;padding:22px 24px;background:rgba(255,253,246,.82);border:3px solid var(--ink);box-shadow:8px 8px 0 rgba(16,35,62,.07);overflow:hidden}
-  .age-journey::before,.age-journey::after{display:none}
+  .age-journey{position:relative;margin:12px 0 18px;padding:20px 22px;background:rgba(255,253,246,.9);border:3px solid var(--ink);box-shadow:8px 8px 0 rgba(16,35,62,.07);overflow:hidden}
+  .age-journey::before{content:"";position:absolute;inset:22px;border:1px solid rgba(16,35,62,.07);pointer-events:none}
+  .age-journey::after{display:none}
   .age-journey svg{position:relative;z-index:1}
-  .age-route{fill:none;stroke:rgba(82,128,126,.88);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  .age-route{fill:none;stroke:rgba(74,122,120,.82);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+  .age-guide{fill:none;stroke:rgba(16,35,62,.09);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
   .age-act{cursor:default}
   .age-no{font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:18px;font-weight:950;fill:var(--ink)}
-  .age-cycle{font-size:12px;font-weight:950;fill:var(--ma);letter-spacing:.08em}
-  .age-title{font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:22px;font-weight:950;fill:var(--ink);letter-spacing:0}
+  .age-cycle{font-size:11px;font-weight:950;fill:var(--ma);letter-spacing:.1em}
+  .age-title{font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:24px;font-weight:950;fill:var(--ink);letter-spacing:0}
   .age-meta{font-size:10.5px;font-weight:800;fill:var(--muted)}
-  .age-rate{font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:18px;font-weight:950;fill:var(--ink)}
   .age-micro{font-size:10.5px;font-weight:850;fill:var(--ink-2)}
-  .age-period{font-size:13px;font-weight:950;fill:var(--fan)}
+  .age-period{font-size:12.5px;font-weight:950;fill:var(--fan)}
 
   @media (max-width:820px){
     .tiles{grid-template-columns:repeat(2,1fr)}
@@ -980,28 +981,29 @@ let gF=0,gM=0; M.forEach(m=>{gF+=m[I_FS];gM+=m[I_MS];});
 // ---------- AGE: three Olympic cycles ----------
 (function(){
   const acts=[
-    {no:"01",cycle:"RIO CYCLE",period:"2016 前",name:"少年试刀",desc:"里约周期 · 马龙巅峰压制",filter:m=>m[I_YR]<2016,pt:[190,152],tx:[330,106],r:62},
-    {no:"02",cycle:"TOKYO CYCLE",period:"2016-2021",name:"逼近山顶",desc:"东京周期 · 樊振东完成反追",filter:m=>m[I_YR]>=2016&&m[I_YR]<=2021,pt:[618,312],tx:[150,266],r:78},
-    {no:"03",cycle:"PARIS CYCLE",period:"2021 之后",name:"赢面抬头",desc:"巴黎周期 · 新核心接管叙事",filter:m=>m[I_YR]>2021,pt:[220,462],tx:[400,424],r:58},
+    {no:"01",cycle:"RIO CYCLE",period:"2016 前",name:"少年试刀",desc:"里约周期 · 马龙巅峰压制",filter:m=>m[I_YR]<2016,pt:[214,160],tx:[362,120],r:58},
+    {no:"02",cycle:"TOKYO CYCLE",period:"2016-2021",name:"逼近山顶",desc:"东京周期 · 樊振东完成反追",filter:m=>m[I_YR]>=2016&&m[I_YR]<=2021,pt:[654,304],tx:[128,278],r:78},
+    {no:"03",cycle:"PARIS CYCLE",period:"2021 之后",name:"赢面抬头",desc:"巴黎周期 · 新核心接管叙事",filter:m=>m[I_YR]>2021,pt:[270,478],tx:[446,438],r:64},
   ].map(a=>{
     const g=M.filter(a.filter),w=g.filter(m=>m[I_W]===1).length,rate=Math.round(w/g.length*100);
     const first=g[0],last=g[g.length-1];
     return {...a,g,w,rate,l:g.length-w,total:g.length,span:`${first[I_YR]}.${first[I_MD]} - ${last[I_YR]}.${last[I_MD]}`};
   });
-  const W=900,H=560;
-  const route=`M190 0 V86 Q190 152 256 152 H512 Q618 152 618 258 V312 Q618 390 540 390 H278 Q220 390 220 448 V542`;
-  let g=`<path class="age-route" d="${route}"/>`;
-  g+=`<text x="330" y="42" class="age-title" style="font-size:26px">三幕上扬</text>`;
-  g+=`<text x="330" y="64" class="age-meta">按奥运周期重切：里约、东京、巴黎</text>`;
+  const W=900,H=600;
+  const route=`M214 18 V94 Q214 160 280 160 H534 Q654 160 654 280 V304 Q654 390 568 390 H364 Q270 390 270 414 V478 Q270 542 334 542 H638`;
+  let g=`<path class="age-guide" d="M82 76 H818 M82 300 H818 M82 524 H818"/>`;
+  g+=`<path class="age-route" d="${route}"/>`;
+  g+=`<text x="362" y="52" class="age-title" style="font-size:28px">三幕上扬</text>`;
+  g+=`<text x="362" y="75" class="age-meta">按奥运周期重切：里约、东京、巴黎</text>`;
   acts.forEach((a,idx)=>{
     const [cx,cy]=a.pt,[tx,ty]=a.tx,rr=a.r;
     g+=`<g class="age-act" data-i="${idx}">
       <circle class="age-disc" cx="${cx}" cy="${cy}" r="${rr}" fill="var(--ma)"/>
-      <circle cx="${cx}" cy="${cy}" r="${rr+8}" fill="none" stroke="rgba(82,128,126,.88)" stroke-width="2"/>
+      <circle cx="${cx}" cy="${cy}" r="${rr+9}" fill="none" stroke="rgba(74,122,120,.8)" stroke-width="2"/>
       <text x="${tx}" y="${ty}" text-anchor="start" class="age-no">${a.no}</text>
       <text x="${tx+34}" y="${ty}" text-anchor="start" class="age-cycle">${a.cycle}</text>
       <text x="${tx}" y="${ty+34}" text-anchor="start" class="age-title">${a.name}</text>
-      <text x="${tx}" y="${ty+58}" text-anchor="start" class="age-period">${a.period} · ${a.rate}%</text>
+      <text x="${tx}" y="${ty+58}" text-anchor="start" class="age-period">${a.period} · 胜率 ${a.rate}%</text>
       <text x="${tx}" y="${ty+82}" text-anchor="start" class="age-meta">${a.desc}</text>
       <text x="${tx}" y="${ty+104}" text-anchor="start" class="age-micro">${a.w} 胜 ${a.l} 负 · 共 ${a.total} 场</text>
     </g>`;
