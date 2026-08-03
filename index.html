@@ -1,0 +1,994 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>樊振东 vs 马龙 · 十年交手全记录</title>
+<style>
+  :root{
+    --bg:#F2F0EA; --surface:#FFFDF6; --surface-2:#E7E5DE;
+    --ink:#10233E; --ink-2:#223653; --muted:#6D7786; --line:#C9C7BE; --line-2:#DDDAD0;
+    --fan:#1D74D8; --fan-hot:#10233E; --fan-soft:rgba(29,116,216,.13);
+    --ma:#E65335; --ma-hot:#F06A3F; --ma-soft:rgba(230,83,53,.15);
+    --grid:#D8D5CC; --shadow:12px 12px 0 rgba(16,35,62,.08),0 18px 44px rgba(16,35,62,.08);
+    --sans:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Source Han Sans SC","Noto Sans CJK SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --mono:"SF Mono",ui-monospace,"Menlo","Consolas",monospace;
+  }
+  :root[data-theme="light"]{
+    --bg:#F2F0EA; --surface:#FFFDF6; --surface-2:#E7E5DE;
+    --ink:#10233E; --ink-2:#223653; --muted:#6D7786; --line:#C9C7BE; --line-2:#DDDAD0;
+    --fan:#1D74D8; --fan-hot:#10233E; --fan-soft:rgba(29,116,216,.13);
+    --ma:#E65335; --ma-hot:#F06A3F; --ma-soft:rgba(230,83,53,.15);
+    --grid:#D8D5CC; --shadow:12px 12px 0 rgba(16,35,62,.08),0 18px 44px rgba(16,35,62,.08);
+  }
+  :root[data-theme="dark"]{
+    --bg:#F2F0EA; --surface:#FFFDF6; --surface-2:#E7E5DE;
+    --ink:#10233E; --ink-2:#223653; --muted:#6D7786; --line:#C9C7BE; --line-2:#DDDAD0;
+    --fan:#1D74D8; --fan-hot:#10233E; --fan-soft:rgba(29,116,216,.13);
+    --ma:#E65335; --ma-hot:#F06A3F; --ma-soft:rgba(230,83,53,.15);
+    --grid:#D8D5CC; --shadow:12px 12px 0 rgba(16,35,62,.08),0 18px 44px rgba(16,35,62,.08);
+  }
+
+  *{box-sizing:border-box}
+  html{background:var(--bg);scroll-behavior:smooth}
+  body{
+    margin:0;color:var(--ink);font-family:var(--sans);line-height:1.6;
+    -webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums;overflow-x:hidden;
+    background:
+      linear-gradient(90deg,transparent calc(50% - 590px),rgba(230,83,53,.18) calc(50% - 590px) calc(50% - 587px),transparent calc(50% - 587px)),
+      linear-gradient(90deg,rgba(230,83,53,.065),transparent 28%,transparent 70%,rgba(16,35,62,.055)),
+      repeating-linear-gradient(0deg,rgba(16,35,62,.028) 0 1px,transparent 1px 4px),
+      repeating-linear-gradient(112deg,rgba(16,35,62,.035) 0 1px,transparent 1px 58px),
+      var(--bg);
+  }
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
+    background:
+      radial-gradient(circle at 8% 18%,rgba(230,83,53,.08),transparent 26%),
+      radial-gradient(circle at 96% 42%,rgba(16,35,62,.06),transparent 30%);
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  section{padding:62px 0 46px;position:relative;overflow:visible}
+  section[style]{padding-top:62px!important}
+  section:first-of-type{padding-top:30px}
+  section::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:min(1180px,calc(100% - 48px));transform:translateX(-50%);border-top:1px solid rgba(16,35,62,.08);pointer-events:none}
+  section:first-of-type::before{border-top:0}
+  section::after{content:"";position:absolute;left:calc(50% - 590px);top:78px;width:13px;height:13px;background:var(--ma);box-shadow:0 0 0 6px var(--bg);transform:translateX(-5px);pointer-events:none}
+  h2{position:relative;z-index:1;font-family:"Microsoft YaHei UI","PingFang SC","Arial Black",var(--sans);font-size:clamp(32px,4.2vw,56px);font-weight:950;line-height:1.04;letter-spacing:0;margin:0 0 14px;max-width:980px;text-wrap:balance;text-transform:uppercase}
+  h2::after{content:"";display:block;width:82px;height:8px;background:var(--ma);margin-top:14px}
+  .eyebrow{position:relative;z-index:1;width:max-content;font-size:12px;font-weight:950;letter-spacing:.18em;text-transform:uppercase;color:var(--surface);margin:0 0 14px;display:flex;align-items:center;gap:10px;background:var(--ink);padding:6px 10px;font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);box-shadow:6px 6px 0 rgba(16,35,62,.08)}
+  .eyebrow::before{content:"";width:12px;height:12px;background:var(--ma);display:inline-block;box-shadow:none}
+  .lead{position:relative;z-index:1;color:var(--ink-2);font-size:16.5px;max-width:74ch;margin:0 0 30px;font-weight:700}
+  .num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+  b.fan{color:var(--fan)} b.ma{color:var(--ma)}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    --paper:#F2F0EA;--poster-ink:#10233E;--poster-red:#E65335;--poster-muted:#627086;
+    position:relative;min-height:auto;padding:34px 0 42px;border-bottom:0;overflow:hidden;display:flex;align-items:center;
+    color:var(--poster-ink);
+    background:
+      radial-gradient(circle at 71% 34%,var(--poster-red) 0 15%,transparent 15.2%),
+      linear-gradient(90deg,rgba(230,83,53,.09),transparent 30%,transparent 68%,rgba(16,35,62,.08)),
+      repeating-linear-gradient(0deg,rgba(16,35,62,.035) 0 1px,transparent 1px 4px),
+      repeating-linear-gradient(112deg,rgba(16,35,62,.045) 0 1px,transparent 1px 58px),
+      var(--paper);
+  }
+  .hero::before{
+    content:"十年";position:absolute;left:-4vw;top:-6vh;color:rgba(16,35,62,.98);
+    font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:clamp(118px,22vw,310px);font-weight:950;line-height:.78;letter-spacing:-.04em;
+    transform:rotate(33deg);transform-origin:left top;white-space:nowrap;
+  }
+  .hero::after{
+    content:"TEN YEARS";position:absolute;right:-7vw;bottom:3vh;color:rgba(16,35,62,.08);
+    font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:clamp(82px,16vw,230px);font-weight:950;line-height:.8;letter-spacing:-.03em;
+    transform:rotate(-10deg);white-space:nowrap;
+  }
+  .hero .wrap{position:relative;z-index:1;width:100%;display:grid;grid-template-columns:300px minmax(0,1fr);grid-template-rows:auto auto auto;gap:28px 42px;align-items:start}
+  .hero .kick{grid-column:1;display:block;width:max-content;max-width:260px;color:var(--poster-ink);font-size:clamp(16px,2vw,24px);line-height:1;font-weight:950;letter-spacing:0;text-transform:uppercase;margin:26px 0 0;padding:10px 12px 12px;background:rgba(242,240,234,.86);box-shadow:12px 12px 0 rgba(16,35,62,.08);font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans)}
+  .hero .kick::before{content:"";display:block;width:72px;height:72px;margin:0 0 14px;background:var(--poster-red);clip-path:polygon(0 0,78% 0,100% 24%,100% 100%,0 100%)}
+  .hero-title{grid-column:2;position:relative;min-height:410px;padding-top:44px}
+  .hero-title::before{content:"";position:absolute;right:8%;top:7%;width:260px;aspect-ratio:1;border-radius:50%;background:var(--poster-red);z-index:-1}
+  .hero-title::after{content:"";position:absolute;right:15%;top:29%;width:150px;height:4px;background:var(--poster-red);box-shadow:-28px 34px 0 var(--poster-red),-58px 68px 0 var(--poster-red);transform:rotate(-10deg)}
+  .hero h1{
+    margin:0;color:var(--poster-ink);font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);
+    font-size:clamp(72px,13vw,178px);line-height:.78;font-weight:950;letter-spacing:-.035em;text-transform:uppercase;text-wrap:balance;
+  }
+  .hero h1 .vs{display:block;width:max-content;margin:.02em 0 .02em 18%;padding:.03em .12em;color:var(--paper);background:var(--poster-ink);font-size:.42em;line-height:.92;transform:rotate(-5deg)}
+  .hero h1 .name-ma{display:block;margin-left:18%;transform:rotate(-4deg)}
+  .hero h1 .name-fan{display:block;transform:rotate(-4deg)}
+  .hero .sub{grid-column:1;max-width:260px;margin:0;color:var(--poster-ink);font-size:15px;line-height:1.38;font-weight:850;text-transform:uppercase}
+  .hero-stamp{grid-column:1;align-self:end;color:var(--poster-red);font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:clamp(42px,6vw,82px);font-weight:950;line-height:.82;letter-spacing:-.02em;text-transform:uppercase}
+  .hero-stamp span{display:block;color:var(--poster-ink);font-size:.55em;letter-spacing:0}
+  .hero-side-note{position:absolute;right:24px;top:62px;writing-mode:vertical-rl;color:var(--poster-ink);font-size:10px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}
+  .hero-marks{position:absolute;right:24px;bottom:54px;display:grid;gap:8px}
+  .hero-marks span{width:18px;height:18px;background:var(--poster-red)}
+  .hero-marks span:nth-child(2){background:var(--poster-ink)}
+  .bigscore{grid-column:2;display:flex;align-items:flex-end;justify-content:flex-end;gap:12px;margin:-118px 0 0 auto;color:var(--poster-ink);transform:rotate(-3deg)}
+  .bigscore .side{display:block;padding:0;border:none;background:transparent;box-shadow:none;overflow:visible}
+  .bigscore .side::after{display:none}
+  .bigscore .who{font-size:11px;font-weight:950;letter-spacing:.08em;text-transform:uppercase;color:var(--poster-muted)}
+  .bigscore .who.mL,.bigscore .who.fZ{color:var(--poster-muted)}
+  .bigscore .n{font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:clamp(40px,5.4vw,76px);font-weight:950;line-height:.82;letter-spacing:-.02em;color:var(--poster-ink)}
+  .bigscore .n.mL,.bigscore .n.fZ{color:var(--poster-ink);text-shadow:none}
+  .bigscore .colon{font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:48px;font-weight:950;color:var(--poster-red);line-height:.9;padding:0}
+  .bigscore .meta{padding:0 0 2px 14px;border:0;border-left:4px solid var(--poster-red);text-align:left;color:var(--poster-ink);font-size:12px;line-height:1.35;font-weight:850}
+  .bigscore .meta strong{color:var(--poster-red);font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:24px;font-weight:950}
+
+  .ribbon-wrap{grid-column:1/-1;margin-top:-2px;padding:15px 18px 16px;border:0;background:rgba(16,35,62,.96);box-shadow:0 16px 40px rgba(16,35,62,.18)}
+  .ribbon-lab{display:flex;justify-content:space-between;gap:18px;color:rgba(242,240,234,.7);font-size:12px;font-weight:800;margin-bottom:10px}
+  .ribbon{display:flex;align-items:flex-end;gap:4px;height:86px}
+  .tick{flex:1;min-width:0;transition:opacity .15s,transform .15s,filter .15s;cursor:default;box-shadow:none;clip-path:none}
+  .tick:hover{opacity:.9;transform:translateY(-8px) scaleY(1.08);filter:brightness(1.18)}
+
+  /* ---------- STAT TILES ---------- */
+  .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .tile{position:relative;background:rgba(255,253,246,.9);border:3px solid var(--ink);padding:20px 18px 18px;box-shadow:8px 8px 0 rgba(16,35,62,.07);overflow:hidden}
+  .tile::before{content:"";position:absolute;right:-28px;bottom:-22px;width:92px;height:70px;background:var(--ma);transform:skewX(-18deg);opacity:.16}
+  .tile .t-lab{font-size:11px;color:var(--muted);font-weight:950;margin-bottom:11px;letter-spacing:.12em;text-transform:uppercase}
+  .tile .t-val{font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:50px;font-weight:950;letter-spacing:-.02em;line-height:.9;color:var(--ink)}
+  .tile .t-val small{font-size:16px;font-weight:700;color:var(--muted);margin-left:3px}
+  .tile .t-sub{font-size:12.5px;color:var(--ink-2);margin-top:8px;font-weight:750}
+  .tile.accF::before{background:var(--fan);opacity:.18}
+  .tile.accM::before{background:var(--ma);opacity:.2}
+
+  /* ---------- CARDS / CHART FRAMES ---------- */
+  .card{position:relative;background:rgba(255,253,246,.92);border:3px solid var(--ink);padding:28px 28px 24px;box-shadow:8px 8px 0 rgba(16,35,62,.07);overflow:hidden}
+  .card::before{content:"";position:absolute;left:0;right:0;top:0;height:8px;background:linear-gradient(90deg,var(--ma) 0 26%,var(--ink) 26% 78%,var(--fan) 78% 100%)}
+  .legend{position:relative;z-index:1;display:flex;gap:18px;flex-wrap:wrap;align-items:center;font-size:13px;color:var(--ink-2);margin:2px 0 10px;font-weight:800}
+  .legend .k{display:inline-flex;align-items:center;gap:7px}
+  .legend .sw{width:16px;height:10px;display:inline-block;clip-path:polygon(18% 0,100% 0,82% 100%,0 100%)}
+  .chart-note{font-size:12.5px;color:var(--muted);margin-top:14px;line-height:1.55;font-weight:700}
+
+  svg{display:block;width:100%;height:auto;overflow:visible}
+  .ax{font-size:11px;fill:var(--muted);font-family:var(--sans)}
+  .axlab{font-size:12px;fill:var(--muted)}
+  .gridline{stroke:var(--grid);stroke-width:1}
+  .baseline{stroke:var(--line);stroke-width:1.5}
+
+  /* tooltip */
+  .tt{position:fixed;pointer-events:none;z-index:50;background:var(--ink);border:0;padding:11px 13px;box-shadow:8px 8px 0 rgba(230,83,53,.28);font-size:12.5px;color:var(--surface);opacity:0;transition:opacity .12s;max-width:250px;line-height:1.5}
+  .tt .tt-h{font-weight:700;margin-bottom:3px}
+  .tt .tt-r{color:rgba(255,253,246,.78)}
+  .tt .win{font-weight:700}
+
+  /* ---------- split compare ---------- */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .split .card h3{margin:4px 0 3px;font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:26px;line-height:.95;font-weight:950;text-transform:uppercase}
+  .split .card .cap{color:var(--muted);font-size:13px;margin:0 0 18px;font-weight:750}
+  .barrow{margin-bottom:15px}
+  .barrow .rl{display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px}
+  .barrow .rl .nm{font-weight:700}
+  .track{height:22px;background:var(--surface-2);overflow:hidden;display:flex;border:2px solid var(--ink)}
+  .track .fillF{background:var(--fan)} .track .fillM{background:var(--ma)}
+  .bigpct{font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:58px;font-weight:950;letter-spacing:-.02em;line-height:.88}
+  .bigpct small{font-size:15px;color:var(--muted);font-weight:700}
+  .bigpct + .bigpct{margin-left:10px}
+
+  /* ---------- marquee cards ---------- */
+  .mq{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .mqc{background:rgba(255,253,246,.92);border:3px solid var(--ink);padding:20px;box-shadow:8px 8px 0 rgba(16,35,62,.07);position:relative;overflow:hidden;min-height:170px}
+  .mqc .yr{font-size:12px;font-weight:950;letter-spacing:.08em;color:var(--muted)}
+  .mqc .ev{font-size:17px;font-weight:950;margin:5px 0 12px;line-height:1.18;color:var(--ink)}
+  .mqc .sc{font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:42px;font-weight:950;letter-spacing:-.02em;line-height:.9}
+  .mqc .res{display:inline-block;margin-top:13px;font-size:12px;font-weight:950;padding:4px 10px;border:2px solid currentColor;background:var(--surface)}
+  .mqc .res.w{color:var(--fan)}
+  .mqc .res.l{color:var(--ma)}
+  .mqc::after{content:"";position:absolute;right:-24px;bottom:-24px;width:120px;height:94px;transform:skewX(-18deg);opacity:.14}
+  .mqc.w::after{background:var(--fan)} .mqc.l::after{background:var(--ma)}
+
+  /* ---------- table ---------- */
+  .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+  .filters button{font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:14px;font-weight:950;letter-spacing:.02em;padding:8px 14px;border:2px solid var(--ink);background:var(--surface);color:var(--ink);cursor:pointer;transition:all .15s;text-transform:uppercase}
+  .filters button:hover{transform:translateY(-2px);box-shadow:5px 5px 0 rgba(16,35,62,.12)}
+  .filters button.on{background:var(--ink);color:var(--surface);border-color:var(--ink);box-shadow:5px 5px 0 rgba(230,83,53,.32)}
+  .tbl-scroll{overflow-x:auto;border:3px solid var(--ink);background:rgba(255,253,246,.92);box-shadow:8px 8px 0 rgba(16,35,62,.07)}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:640px}
+  thead th{position:sticky;top:0;background:var(--ink);text-align:left;font-weight:950;color:var(--surface);padding:12px 14px;border-bottom:0;font-size:12px;letter-spacing:.08em;white-space:nowrap;text-transform:uppercase}
+  tbody td{padding:11px 14px;border-bottom:1px solid var(--line-2);color:var(--ink-2);white-space:nowrap;font-weight:700}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover{background:rgba(230,83,53,.08)}
+  td.ev-c{color:var(--ink);font-weight:600;white-space:normal;min-width:180px}
+  .rescell{font-weight:800;font-variant-numeric:tabular-nums}
+  .rescell.w{color:var(--fan)} .rescell.l{color:var(--ma)}
+  .tag{font-size:11px;font-weight:900;padding:2px 8px;border:1px solid currentColor}
+  .tag.s{background:var(--surface-2);color:var(--ink);border:1px solid var(--line)}
+  .tag.t{background:var(--ma-soft);color:var(--ma)}
+  .gm{color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums}
+
+  footer{border-top:1px solid rgba(16,35,62,.12);padding:38px 0 64px;color:var(--muted);font-size:13px;line-height:1.7;background:linear-gradient(180deg,transparent,rgba(16,35,62,.06))}
+  footer b{color:var(--ink-2)}
+  .callout{background:rgba(255,253,246,.9);border:3px solid var(--ink);border-left:12px solid var(--ma);padding:16px 20px;margin:24px 0;color:var(--ink-2);font-size:14.5px;box-shadow:8px 8px 0 rgba(16,35,62,.07);font-weight:750}
+  .callout b{color:var(--ink)}
+
+  /* ---------- editorial infographics ---------- */
+  .compare-board{position:relative;margin:34px 0 18px;padding:34px 34px 30px;background:rgba(255,253,246,.92);border:3px solid var(--ink);box-shadow:8px 8px 0 rgba(16,35,62,.07);overflow:hidden}
+  .compare-board::before{content:"";position:absolute;left:50%;top:24px;bottom:24px;width:2px;background:var(--line);transform:translateX(-50%)}
+  .compare-board::after{display:none}
+  .compare-head{display:grid;grid-template-columns:1fr 140px 1fr;align-items:end;gap:18px;margin-bottom:22px}
+  .compare-name{font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:clamp(38px,5vw,68px);font-weight:950;line-height:.86;letter-spacing:-.03em;color:var(--ink)}
+  .compare-name.ma{text-align:left;color:var(--ma)}
+  .compare-name.fan{text-align:right;color:var(--fan)}
+  .compare-decade{text-align:center;color:var(--ink);font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:30px;font-weight:950;line-height:.9;white-space:nowrap}
+  .compare-decade span{display:block;color:var(--muted);font-family:var(--sans);font-size:11px;font-weight:950;letter-spacing:.12em;margin-top:8px}
+  .compare-row{position:relative;display:grid;grid-template-columns:1fr 140px 1fr;gap:18px;align-items:center;padding:12px 0;border-top:1px solid var(--line-2)}
+  .compare-val{font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:36px;font-weight:950;line-height:.9;color:var(--ink)}
+  .compare-val.left{text-align:right;color:var(--ma)}
+  .compare-val.right{text-align:left;color:var(--fan)}
+  .compare-lab{text-align:center;font-size:12px;font-weight:950;color:var(--ink);letter-spacing:.08em;text-transform:uppercase}
+  .compare-note{font-size:12px;color:var(--muted);font-weight:750;margin-top:18px;text-align:center}
+
+  .timeline-card{position:relative;margin-top:18px;padding:30px 28px 26px;background:rgba(255,253,246,.92);border:3px solid var(--ink);box-shadow:8px 8px 0 rgba(16,35,62,.07);overflow:hidden}
+  .timeline-card::before{content:"";position:absolute;right:-70px;top:-70px;width:260px;aspect-ratio:1;border-radius:50%;background:rgba(230,83,53,.14)}
+  .timeline-title{position:relative;z-index:1;display:flex;justify-content:space-between;gap:18px;align-items:flex-start;margin-bottom:8px}
+  .timeline-title h3{font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:clamp(30px,4vw,54px);font-weight:950;line-height:.88;letter-spacing:-.02em;margin:0;color:var(--ink)}
+  .timeline-title p{max-width:40ch;margin:0;color:var(--ink-2);font-size:13px;font-weight:800;line-height:1.45}
+  #decadeMap{position:relative;z-index:1}
+  .map-year{font-family:Impact,"Arial Black","Microsoft YaHei UI",var(--sans);font-size:18px;fill:var(--ink);font-weight:950}
+  .map-small{font-size:11px;fill:var(--muted);font-weight:800}
+  .map-path{fill:none;stroke:var(--ink);stroke-width:3;stroke-linecap:round;stroke-dasharray:1 10;opacity:.55}
+  .map-node{cursor:default;transition:opacity .15s}
+  .map-node:hover{opacity:.72}
+
+  @media (max-width:820px){
+    .tiles{grid-template-columns:repeat(2,1fr)}
+    .split{grid-template-columns:1fr}
+    .mq{grid-template-columns:1fr}
+    .hero{min-height:auto;padding:34px 0 30px;align-items:flex-start}
+    .hero::before{font-size:clamp(92px,28vw,170px);left:-14vw;top:6vh;opacity:.18}
+    .hero::after{display:none}
+    .hero .wrap{grid-template-columns:1fr;grid-template-rows:auto;gap:20px}
+    .hero .kick{grid-column:1;margin:0;font-size:18px;line-height:1.08;display:flex;align-items:center;gap:12px}
+    .hero .kick::before{width:42px;height:42px;margin:0;flex:0 0 auto}
+    .hero-title{grid-column:1;min-height:0;padding-top:12px}
+    .hero-title::before{right:-14%;top:14%;width:190px}
+    .hero-title::after{right:12%;top:42%;width:100px}
+    .hero h1{font-size:clamp(58px,18vw,92px)}
+    .hero h1 .vs{margin-left:26%;font-size:.48em}
+    .hero h1 .name-ma{margin-left:24%}
+    .hero .sub{grid-column:1;max-width:none;font-size:15px}
+    .hero-stamp{grid-column:1;font-size:clamp(38px,11vw,60px)}
+    .bigscore{grid-column:1;margin:0;justify-content:flex-start;transform:none;flex-wrap:wrap}
+    .bigscore .meta{border-left:0;border-top:4px solid var(--poster-red);padding:8px 0 0;width:100%}
+    .hero-side-note{display:none}
+    .hero-marks{right:16px;top:24px;bottom:auto}
+    .compare-board{padding:24px 18px}
+    .compare-head,.compare-row{grid-template-columns:1fr 74px 1fr;gap:10px}
+    .compare-board::before,.compare-board::after{display:none}
+    .compare-name{font-size:38px}
+    .compare-decade{font-size:26px}
+    .compare-val{font-size:30px}
+    .compare-lab{font-size:10px}
+    .timeline-title{display:block}
+    .timeline-title p{margin-top:10px}
+  }
+  @media (max-width:560px){
+    .wrap{padding:0 16px}
+    section{padding:48px 0 36px}
+    section[style]{padding-top:48px!important}
+    section:first-of-type{padding-top:26px}
+    section::after{display:none}
+    .bigscore{gap:10px}
+    .bigscore .side{padding:16px 12px 14px}
+    .ribbon-lab{display:block}
+    .tiles{grid-template-columns:1fr}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-side-note">Fan Zhendong · Ma Long · 2013-2023</div>
+    <div class="hero-marks"><span></span><span></span></div>
+    <div class="kick">FAN<br>ZHENDONG<br><span style="color:var(--poster-red)">10</span><br>YEARS<br>MA<br>LONG</div>
+    <div class="hero-title">
+      <h1><span class="name-fan">樊振东</span><span class="vs">十年</span><span class="name-ma">马龙</span></h1>
+    </div>
+    <p class="sub">从少年挑战者到时代核心，从巅峰龙队到老将防线。2013-2023，两个人把同一张球台打成了中国男乒最锋利的时间轴。</p>
+    <div class="hero-stamp">TWO MEN<span>ONE DECADE</span></div>
+
+    <div class="bigscore">
+      <div class="side">
+        <div class="who mL">马龙 · 胜</div>
+        <div class="n mL num">27</div>
+      </div>
+      <div class="colon">:</div>
+      <div class="side">
+        <div class="who fZ">樊振东 · 胜</div>
+        <div class="n fZ num">25</div>
+      </div>
+      <div class="meta">
+        <strong>52</strong> 场交手<br>
+        2013-2023<br>
+        十年对抗
+      </div>
+    </div>
+
+    <div class="ribbon-wrap">
+      <div class="ribbon-lab"><span>← 2013　52 场交手沿十年铺开：红色马龙，蓝色樊振东；越高，赢得越狠</span><span>2023 →</span></div>
+      <div class="ribbon" id="ribbon"></div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="tiles" id="tiles"></div>
+    <div class="callout" id="headline"></div>
+    <div class="compare-board" id="compareBoard"></div>
+    <div class="timeline-card">
+      <div class="timeline-title">
+        <h3>十年轨迹</h3>
+        <p>每个圆代表一个赛季，圆越大，当年交手越密；圆环里的红蓝分段表示双方当年胜场比例，下面的小刻度是 52 场比赛的时间分布。</p>
+      </div>
+      <div id="decadeMap"></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:24px">
+  <div class="wrap">
+    <p class="eyebrow">趋势 · 反超</p>
+    <h2>十年间，樊振东如何把胜率从 30% 追到平手</h2>
+    <p class="lead">下图是樊振东<b class="fan">累计胜率</b>随交手场次的变化。开局连败让曲线一度跌到谷底，随后长期在 50% 红线下方徘徊；直到近几年才真正咬住、逼平。虚线是 50% 的均势基准。</p>
+    <div class="card">
+      <div class="legend">
+        <span class="k"><span class="sw" style="background:var(--fan)"></span>樊振东累计胜率</span>
+        <span class="k"><span class="sw" style="background:var(--muted);opacity:.5"></span>50% 均势线</span>
+      </div>
+      <div id="cumChart"></div>
+      <p class="chart-note">横轴为第 1 到第 52 次交手（按时间排序），顶部标注年份分界。曲线越靠上，代表樊振东在此前所有交手中的赢面越大。</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:24px">
+  <div class="wrap">
+    <p class="eyebrow">逐年 · 战绩</p>
+    <h2>一年一年看，天平怎样倾斜</h2>
+    <p class="lead">以每个自然年为单位，对比双方当年赢下的场数。<b class="ma">红色向下</b>是马龙的胜场，<b class="fan">蓝色向上</b>是樊振东的胜场。前五年红多蓝少，后五年格局反转。</p>
+    <div class="card">
+      <div class="legend">
+        <span class="k"><span class="sw" style="background:var(--fan)"></span>樊振东胜场</span>
+        <span class="k"><span class="sw" style="background:var(--ma)"></span>马龙胜场</span>
+      </div>
+      <div id="yearChart"></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:24px">
+  <div class="wrap">
+    <p class="eyebrow">场景 · 反差</p>
+    <h2>单打是马龙的天下，团体赛却几乎是樊振东的主场</h2>
+    <p class="lead">把 52 场按赛制拆开，会看到一个惊人的分裂：正式单打里马龙压制，而在乒超联赛、全运男团等团体赛中，樊振东近乎通吃。同一对对手，剧本完全不同。</p>
+    <div class="split">
+      <div class="card">
+        <h3>单打交手</h3>
+        <p class="cap" id="soloCap"></p>
+        <div class="barrow">
+          <div class="rl"><span class="nm" style="color:var(--fan)">樊振东</span><span id="soloFN"></span></div>
+          <div class="track"><div class="fillF" id="soloFbar"></div><div class="fillM" id="soloMbar"></div></div>
+          <div class="rl" style="margin-top:6px"><span class="nm" style="color:var(--ma)">马龙</span><span id="soloMN"></span></div>
+        </div>
+        <div style="margin-top:20px"><span class="bigpct" style="color:var(--ma)" id="soloPct"></span><span class="bigpct" style="font-size:15px;color:var(--muted);font-weight:700"> 马龙胜率</span></div>
+      </div>
+      <div class="card">
+        <h3>团体 / 乒超交手</h3>
+        <p class="cap" id="teamCap"></p>
+        <div class="barrow">
+          <div class="rl"><span class="nm" style="color:var(--fan)">樊振东</span><span id="teamFN"></span></div>
+          <div class="track"><div class="fillF" id="teamFbar"></div><div class="fillM" id="teamMbar"></div></div>
+          <div class="rl" style="margin-top:6px"><span class="nm" style="color:var(--ma)">马龙</span><span id="teamMN"></span></div>
+        </div>
+        <div style="margin-top:20px"><span class="bigpct" style="color:var(--fan)" id="teamPct"></span><span class="bigpct" style="font-size:15px;color:var(--muted);font-weight:700"> 樊振东胜率</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:24px">
+  <div class="wrap">
+    <p class="eyebrow">胶着 · 决胜局</p>
+    <h2>越是打满决胜局，越是五五开</h2>
+    <p class="lead" id="deciderLead"></p>
+    <div class="split">
+      <div class="card" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center">
+        <div style="font-size:13px;color:var(--muted);font-weight:600;margin-bottom:10px">打满决胜局的交手中</div>
+        <div style="display:flex;align-items:baseline;gap:14px">
+          <span style="font-size:64px;font-weight:800;color:var(--fan);line-height:1" id="decF"></span>
+          <span style="font-size:30px;color:var(--muted);font-weight:300">:</span>
+          <span style="font-size:64px;font-weight:800;color:var(--ma);line-height:1" id="decM"></span>
+        </div>
+        <div style="font-size:13px;color:var(--muted);margin-top:12px"><b style="color:var(--fan)">樊振东</b> 胜　/　<b style="color:var(--ma)">马龙</b> 胜</div>
+      </div>
+      <div class="card">
+        <div style="font-size:13px;color:var(--muted);font-weight:600;margin-bottom:6px">对比总战绩，决胜局是樊振东最"抗打"的战场</div>
+        <div id="clutchChart"></div>
+        <p class="chart-note">左：全部 52 场的胜率；右：仅统计打满决胜局的交手。樊振东在决胜局的胜率明显高于整体。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:24px">
+  <div class="wrap">
+    <p class="eyebrow">舞台 · 大赛</p>
+    <h2>灯光最亮的那几场</h2>
+    <p class="lead">奥运会、世乒赛、世界杯——三大赛的单打对决，长期是马龙的领地。樊振东唯一一次在三大赛正赛击败马龙，是 2020 年的世界杯决赛；而奥运会决赛的那一次交锋，成了他最难释怀的一战。</p>
+    <div class="mq" id="marquee"></div>
+  </div>
+</section>
+
+<section style="padding-top:24px">
+  <div class="wrap">
+    <p class="eyebrow">代际 · 年龄</p>
+    <h2>错位的巅峰：9 岁之差，写就了这段宿敌史</h2>
+    <p class="lead">马龙比樊振东年长 <b>9 岁</b>。当马龙正值当打之年，樊振东还是个孩子；等樊振东真正长成，马龙已步入老将阶段。下图并排画出两人每场比赛时的实际年龄——阴影带是乒乓球公认的巅峰区间（23–28 岁）。惊人的是：<b class="fan">两条线从未同时落在这条带子里</b>——52 场交手中，两人同处巅峰年龄的场次是 <b>0</b>。</p>
+
+    <div class="card" style="margin-bottom:16px">
+      <div class="legend">
+        <span class="k"><span class="sw" style="background:var(--ma)"></span>马龙巅峰期（23–28 岁）</span>
+        <span class="k"><span class="sw" style="background:var(--fan)"></span>樊振东巅峰期（23–28 岁）</span>
+        <span class="k">底部竖线＝52 场交手，按胜方着色</span>
+      </div>
+      <div id="primeGap"></div>
+      <p class="chart-note">把两人各自的巅峰年龄段放到同一条时间轴上，错位一目了然：马龙的黄金期约在 2012–2017 年，樊振东要到 2020 年后才开启，两段巅峰之间隔着约两年的空档（正是 2018–2019 的"交接期"）。底部的交手密度更说明问题——绝大多数对决发生在马龙巅峰期，而真正属于樊振东巅峰年龄的交手，只有最后寥寥数场。</p>
+    </div>
+
+    <div class="card">
+      <div class="legend">
+        <span class="k"><span class="sw" style="background:var(--ma)"></span>马龙年龄</span>
+        <span class="k"><span class="sw" style="background:var(--fan)"></span>樊振东年龄（圆点颜色＝该场胜方）</span>
+        <span class="k"><span class="sw" style="background:var(--grid)"></span>巅峰区间 23–28 岁</span>
+      </div>
+      <div id="ageChart"></div>
+      <p class="chart-note">横轴为第 1–52 次交手。马龙的年龄线前期高踞巅峰带内，随后升出；樊振东的年龄线直到最后几年才升入巅峰带——两人的黄金期几乎完美错开，这也是这段十年对决的宿命底色。</p>
+    </div>
+
+    <p class="lead" style="margin-top:36px">若按樊振东的成长阶段拆成三幕，会看到一条清晰的上扬曲线——他每长大一岁，赢面就多一分：</p>
+    <div class="mq" id="ageActs"></div>
+    <div class="callout" id="ageHeadline" style="border-left-color:var(--ma)"></div>
+  </div>
+</section>
+
+<section style="padding-top:24px">
+  <div class="wrap">
+    <p class="eyebrow">档案 · 全记录</p>
+    <h2>52 场交手 · 完整数据</h2>
+    <p class="lead">比分以「樊振东局数 : 马龙局数」表示。可按赛制或胜方筛选。</p>
+    <div class="filters" id="filters">
+      <button data-f="all" class="on">全部 52 场</button>
+      <button data-f="solo">仅单打</button>
+      <button data-f="team">仅团体</button>
+      <button data-f="fan">樊振东胜</button>
+      <button data-f="ma">马龙胜</button>
+    </div>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>#</th><th>时间</th><th>赛事</th><th>赛制</th><th>比分</th><th>结果</th><th>各局比分（樊-马）</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>关于数据</b>　本页依据用户提供的十年交手统计表整理，共 52 场，涵盖直通赛、公开赛、世乒赛、世界杯、奥运会、乒超联赛及团体赛。比分方向统一为「樊振东 : 马龙」。年龄为比赛当年两人的实际年龄（马龙年长约 9 岁）。</p>
+    <p style="margin-top:10px;font-size:12px;opacity:.85">注：原始表中 2014 亚洲杯决赛、2023 亚锦赛决赛两场的单局比分是以马龙视角记录的，与其余各场（樊振东视角）方向不一致，已依据官方报道校准为统一的「樊振东 : 马龙」口径——2014 亚洲杯马龙 4:3 胜、2023 亚锦赛马龙 3:2 逆转，均与两人官方交手总纪录 27:25 一致。数据来源：央视网、新华网等公开报道；可视化与数据分析由 Claude 生成，仅供参考交流。</p>
+  </div>
+</footer>
+
+<div class="tt" id="tt"></div>
+
+<script>
+// ---- 数据：52 场交手（比分为 樊振东局 : 马龙局）----
+const M = [
+ [1,2013,"1.16","直通巴黎第二阶段",1,3,0,"11-13,11-7,8-11,5-11",24,15,0],
+ [2,2013,"4.27","巴黎世锦赛热身赛",1,4,0,"11-13,11-13,12-10,4-11,6-11",24,16,0],
+ [3,2013,"9.10","全运会决赛",3,4,0,"7-11,11-9,7-11,11-9,11-7,9-11,6-11",24,16,0],
+ [4,2013,"9.22","乒超",2,3,0,"11-6,9-11,11-6,7-11,5-7",24,16,1],
+ [5,2014,"1.27","直通东京第一阶段",0,3,0,"9-11,12-14,12-14",25,17,0],
+ [6,2014,"2.27","直通东京第二阶段",3,2,1,"11-8,11-13,11-9,3-11,11-7",25,17,0],
+ [7,2014,"3.22","亚洲杯决赛",3,4,0,"9-11,8-11,11-9,6-11,11-7,11-9,8-11",25,17,0],
+ [8,2014,"4.22","东京热身赛团体",2,3,0,"11-9,6-11,8-11,11-5,11-9",25,17,1],
+ [9,2014,"6.8","中国公开赛半决赛",3,4,0,"9-11,11-9,6-11,11-7,7-11,11-9,8-11",25,17,0],
+ [10,2014,"6.17","乒超",2,3,0,"7-11,12-10,13-11,8-11,1-7",25,17,1],
+ [11,2014,"9.17","亚运会热身赛",3,0,1,"11-8,12-10,11-8",25,17,0],
+ [12,2014,"11.4","全锦赛团体半决赛",3,2,1,"11-7,11-5,8-11,7-11,11-4",26,17,1],
+ [13,2014,"11.9","全锦赛决赛",4,2,1,"11-7,8-11,11-1,11-13,11-5,12-10",26,17,0],
+ [14,2015,"2.3","直通苏州第一阶段",3,1,1,"9-11,11-9,11-5,11-8",26,18,0],
+ [15,2015,"2.15","科威特公开赛半决赛",1,4,0,"7-11,8-11,8-11,11-9,8-11",26,18,0],
+ [16,2015,"5.3","世乒赛半决赛",1,4,0,"1-11,7-11,8-11,11-7,5-11",26,18,0],
+ [17,2015,"5.30","乒超",3,2,1,"13-15,8-11,11-6,12-10,7-4",26,18,1],
+ [18,2015,"7.25","乒超",3,1,1,"11-7,11-6,9-11,11-9",26,18,1],
+ [19,2015,"9.13","乒超决赛",3,2,1,"4-11,11-7,11-6,7-11,7-3",26,18,1],
+ [20,2015,"10.18","世界杯决赛",0,4,0,"7-11,6-11,8-11,8-11",26,18,0],
+ [21,2015,"12.14","总决赛决赛",3,4,0,"10-12,10-12,13-11,11-7,11-7,8-11,9-11",27,18,0],
+ [22,2016,"1.6","直通吉隆坡",0,5,0,"7-11,9-11,6-11,6-11,5-11",27,18,0],
+ [23,2016,"2.19","吉隆坡热身赛团体",3,1,1,"11-3,11-8,9-11,14-12",27,19,1],
+ [24,2016,"3.27","卡塔尔公开赛决赛",1,4,0,"9-11,9-11,11-5,11-13,5-11",27,19,0],
+ [25,2016,"4.14","奥运会亚洲预选赛决赛",1,4,0,"18-16,3-11,6-11,7-11,11-13",27,19,0],
+ [26,2016,"9.18","中国公开赛决赛",4,0,1,"11-9,13-11,11-8,11-5",27,19,0],
+ [27,2016,"11.12","乒超",3,2,1,"11-3,9-11,8-11,11-9,10-8",28,19,1],
+ [28,2016,"12.11","总决赛决赛",2,4,0,"5-11,4-11,9-11,11-7,14-12,9-11",28,19,0],
+ [29,2017,"2.26","卡塔尔公开赛决赛",2,4,0,"8-11,8-11,7-11,11-5,11-6,4-11",28,20,0],
+ [30,2017,"3.6","地表最强12人第九轮",2,1,1,"11-6,5-11,14-12",28,20,0],
+ [31,2017,"6.5","世乒赛决赛",3,4,0,"11-7,6-11,3-11,8-11,11-5,11-7,10-12",28,20,0],
+ [32,2017,"6.18","日本公开赛决赛",1,4,0,"7-11,11-5,7-11,8-11,5-11",28,20,0],
+ [33,2017,"8.29","全运会男团小组赛",3,0,1,"11-5,11-4,11-5",28,20,1],
+ [34,2017,"9.6","全运会决赛",2,4,0,"8-11,11-8,11-9,7-11,6-11,9-11",28,20,0],
+ [35,2017,"12.5","乒超",3,1,1,"11-8,11-4,9-11,11-5",29,20,1],
+ [36,2018,"1.13","乒超",3,0,1,"11-6,11-6,11-8",29,20,1],
+ [37,2018,"6.3","中国公开赛决赛",1,4,0,"11-7,8-11,4-11,3-11,12-14",29,21,0],
+ [38,2019,"4.7","亚洲杯决赛",4,2,1,"9-11,12-10,9-11,11-7,11-8,12-10",30,22,0],
+ [39,2019,"6.1","中国公开赛八强",1,4,0,"4-11,11-8,6-11,10-12,11-13",30,22,0],
+ [40,2019,"6.15","日本公开赛八强",4,1,1,"14-12,11-6,8-11,11-7,11-5",30,22,0],
+ [41,2019,"12.15","总决赛决赛",4,1,1,"11-6,12-10,11-6,6-11,11-8",31,22,0],
+ [42,2020,"10.10","全锦赛决赛",4,3,1,"11-5,12-14,3-11,11-5,6-11,11-9,11-7",31,23,0],
+ [43,2020,"11.15","世界杯决赛",4,3,1,"3-11,11-8,11-3,11-6,7-11,7-11,11-9",32,23,0],
+ [44,2020,"11.22","总决赛决赛",1,4,0,"11-13,7-11,10-12,11-9,8-11",32,23,0],
+ [45,2021,"7.30","奥运会决赛",2,4,0,"4-11,12-10,8-11,9-11,11-3,7-11",32,24,0],
+ [46,2021,"9.21","全运会男团决赛",3,2,1,"11-7,8-11,7-11,12-10,13-11",32,24,1],
+ [47,2021,"11.14","休斯顿世乒赛热身赛",4,0,1,"11-9,14-12,11-3,11-8",33,24,0],
+ [48,2022,"3.20","WTT新加坡大满贯决赛",4,3,1,"11-6,11-6,6-11,9-11,8-11,11-8,11-7",33,25,0],
+ [49,2022,"12.11","乒超决赛",3,1,1,"8-11,11-6,11-6,11-6",34,25,1],
+ [50,2023,"2.23","直通德班决赛",0,3,0,"8-11,5-11,7-11",34,26,0],
+ [51,2023,"3.19","WTT新加坡大满贯决赛",4,1,1,"11-5,13-11,8-11,11-9,11-9",34,26,0],
+ [52,2023,"9.10","亚锦赛决赛",2,3,0,"7-11,11-5,11-7,5-11,6-11",34,26,0],
+];
+// index map
+const [I_N,I_YR,I_MD,I_EV,I_FS,I_MS,I_W,I_G,I_MA,I_FA,I_TEAM]=[0,1,2,3,4,5,6,7,8,9,10];
+
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const tt=document.getElementById('tt');
+function showTT(html,e){tt.innerHTML=html;tt.style.opacity='1';moveTT(e);}
+function moveTT(e){const p=12;let x=e.clientX+p,y=e.clientY+p;const r=tt.getBoundingClientRect();if(x+r.width>innerWidth-8)x=e.clientX-r.width-p;if(y+r.height>innerHeight-8)y=e.clientY-r.height-p;tt.style.left=x+'px';tt.style.top=y+'px';}
+function hideTT(){tt.style.opacity='0';}
+
+// ---------- derived stats ----------
+const total=M.length;
+const fanW=M.filter(m=>m[I_W]===1).length, maW=total-fanW;
+const solo=M.filter(m=>m[I_TEAM]===0), team=M.filter(m=>m[I_TEAM]===1);
+const soloFan=solo.filter(m=>m[I_W]===1).length, soloMa=solo.length-soloFan;
+const teamFan=team.filter(m=>m[I_W]===1).length, teamMa=team.length-teamFan;
+const isDec=m=>Math.min(m[I_FS],m[I_MS])===Math.max(m[I_FS],m[I_MS])-1;
+const dec=M.filter(isDec);
+const decF=dec.filter(m=>m[I_W]===1).length, decM=dec.length-decF;
+let gF=0,gM=0; M.forEach(m=>{gF+=m[I_FS];gM+=m[I_MS];});
+
+// ---------- HERO ribbon ----------
+(function(){
+  const r=document.getElementById('ribbon');
+  const maxMargin=5;
+  r.innerHTML=M.map(m=>{
+    const win=m[I_W]===1;
+    const margin=Math.abs(m[I_FS]-m[I_MS]);
+    const h=34+ (margin/maxMargin)*44;
+    const col=win?'var(--fan)':'var(--ma)';
+    const res=win?'樊振东胜':'马龙胜';
+    return `<div class="tick" style="height:${h}px;background:${col}"
+      data-h="第${m[I_N]}场 · ${m[I_YR]}.${m[I_MD]}" data-e="${m[I_EV]}"
+      data-s="${m[I_FS]} : ${m[I_MS]}" data-r="${res}" data-w="${win}"></div>`;
+  }).join('');
+  r.querySelectorAll('.tick').forEach(t=>{
+    t.addEventListener('mousemove',e=>{
+      const w=t.dataset.w==='true';
+      showTT(`<div class="tt-h">${t.dataset.h}</div><div class="tt-r">${t.dataset.e}</div><div class="tt-r" style="margin-top:3px">比分 <b>${t.dataset.s}</b> · <span class="win" style="color:${w?'var(--fan)':'var(--ma)'}">${t.dataset.r}</span></div>`,e);
+    });
+    t.addEventListener('mouseleave',hideTT);
+  });
+})();
+
+// ---------- STAT TILES ----------
+(function(){
+  const tiles=[
+    {lab:"交手总场次",val:total,sub:"2013 – 2023，跨 11 个赛季"},
+    {lab:"马龙 胜场",val:maW,sub:`胜率 ${(maW/total*100).toFixed(1)}%`,cls:"accM",col:"var(--ma)"},
+    {lab:"樊振东 胜场",val:fanW,sub:`胜率 ${(fanW/total*100).toFixed(1)}%`,cls:"accF",col:"var(--fan)"},
+    {lab:"累计总局分",val:`${gF}<small>:${gM}</small>`,sub:"樊振东 : 马龙（各局胜负累计）"},
+  ];
+  document.getElementById('tiles').innerHTML=tiles.map(t=>
+    `<div class="tile ${t.cls||''}"><div class="t-lab">${t.lab}</div><div class="t-val" style="${t.col?`color:${t.col}`:''}">${t.val}</div><div class="t-sub">${t.sub}</div></div>`
+  ).join('');
+
+  const early=M.filter(m=>m[I_YR]<=2017), late=M.filter(m=>m[I_YR]>=2018);
+  const eF=early.filter(m=>m[I_W]===1).length, lF=late.filter(m=>m[I_W]===1).length;
+  document.getElementById('headline').innerHTML=
+   `<b>格局逆转：</b>2013–2017 年，樊振东对马龙 <b class="num">${eF}</b> 胜 <b class="num">${early.length-eF}</b> 负（胜率 ${(eF/early.length*100).toFixed(0)}%）；`+
+   `2018–2023 年，则打出 <b class="num">${lF}</b> 胜 <b class="num">${late.length-lF}</b> 负（胜率 ${(lF/late.length*100).toFixed(0)}%）。十年之间，从被压制到反超。`;
+})();
+
+// ---------- EDITORIAL COMPARISON + DECADE MAP ----------
+(function(){
+  const early=M.filter(m=>m[I_YR]<=2017), late=M.filter(m=>m[I_YR]>=2018);
+  const earlyF=early.filter(m=>m[I_W]===1).length, lateF=late.filter(m=>m[I_W]===1).length;
+  const soloPctM=(soloMa/solo.length*100).toFixed(0), teamPctF=(teamFan/team.length*100).toFixed(0);
+  const rows=[
+    {lab:"总胜场", left:maW, right:fanW},
+    {lab:"单打压制", left:`${soloPctM}%`, right:`${(soloFan/solo.length*100).toFixed(0)}%`},
+    {lab:"团体 / 乒超", left:`${(teamMa/team.length*100).toFixed(0)}%`, right:`${teamPctF}%`},
+    {lab:"决胜局", left:decM, right:decF},
+    {lab:"2013-2017", left:`${early.length-earlyF} 胜`, right:`${earlyF} 胜`},
+    {lab:"2018-2023", left:`${late.length-lateF} 胜`, right:`${lateF} 胜`},
+  ];
+  document.getElementById('compareBoard').innerHTML=`
+    <div class="compare-head">
+      <div class="compare-name ma">马龙</div>
+      <div class="compare-decade">2013-2023<span>VS · HEAD TO HEAD</span></div>
+      <div class="compare-name fan">樊振东</div>
+    </div>
+    ${rows.map(r=>`
+      <div class="compare-row">
+        <div class="compare-val left">${r.left}</div>
+        <div class="compare-lab">${r.lab}</div>
+        <div class="compare-val right">${r.right}</div>
+      </div>`).join('')}
+    <div class="compare-note">读法：左侧为马龙，右侧为樊振东；不是把比分放大，而是把十年里的结构性差异放到同一条中轴上。</div>`;
+
+  const W=1080,H=430;
+  const years=[...new Set(M.map(m=>m[I_YR]))];
+  const maxCount=Math.max(...years.map(y=>M.filter(m=>m[I_YR]===y).length));
+  const pts=years.map((yr,i)=>{
+    const t=i/(years.length-1);
+    const x=70+t*(W-140);
+    const y=245 - Math.sin(t*Math.PI*1.12)*135 + Math.sin(t*Math.PI*3.1)*34;
+    const ms=M.filter(m=>m[I_YR]===yr);
+    const f=ms.filter(m=>m[I_W]===1).length, ma=ms.length-f;
+    return {yr,x,y,ms,f,ma,r:25+ms.length/maxCount*44};
+  });
+  const path='M '+pts.map(p=>`${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' L ');
+  let g=`<path class="map-path" d="${path}"/>`;
+  pts.forEach((p,i)=>{
+    const fanPart=p.f/p.ms.length;
+    const maDash=(1-fanPart)*100, fanDash=fanPart*100;
+    g+=`<g class="map-node" data-i="${i}">
+      <circle cx="${p.x}" cy="${p.y}" r="${p.r}" fill="rgba(230,83,53,.08)" stroke="var(--line)" stroke-width="1"/>
+      <circle cx="${p.x}" cy="${p.y}" r="${p.r}" fill="none" stroke="var(--ma)" stroke-width="9" pathLength="100" stroke-dasharray="${maDash} ${100-maDash}" transform="rotate(-90 ${p.x} ${p.y})"/>
+      <circle cx="${p.x}" cy="${p.y}" r="${p.r}" fill="none" stroke="var(--fan)" stroke-width="9" pathLength="100" stroke-dasharray="${fanDash} ${100-fanDash}" stroke-dashoffset="${-maDash}" transform="rotate(-90 ${p.x} ${p.y})"/>
+      <circle cx="${p.x}" cy="${p.y}" r="4" fill="var(--ink)"/>
+      <text class="map-year" x="${p.x}" y="${p.y-p.r-13}" text-anchor="middle">${p.yr}</text>
+      <text class="map-small" x="${p.x}" y="${p.y+p.r+22}" text-anchor="middle">${p.ms.length} 场 · ${p.f}:${p.ma}</text>
+    </g>`;
+    p.ms.forEach((m,j)=>{
+      const dx=(j-(p.ms.length-1)/2)*8;
+      g+=`<rect x="${p.x+dx-2}" y="${H-54}" width="4" height="${m[I_W]===1?28:20}" fill="${m[I_W]===1?'var(--fan)':'var(--ma)'}"/>`;
+    });
+  });
+  g+=`<text x="26" y="${H-76}" class="map-small">52 MATCHES / MATCH DISTRIBUTION</text>
+      <text x="${W-26}" y="34" class="map-small" text-anchor="end">RED = MA LONG · BLUE = FAN ZHENDONG</text>`;
+  document.getElementById('decadeMap').innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="十年交手轨迹图">${g}</svg>`;
+  document.querySelectorAll('#decadeMap .map-node').forEach(n=>{
+    n.addEventListener('mousemove',e=>{
+      const p=pts[+n.dataset.i];
+      showTT(`<div class="tt-h">${p.yr} 年 · ${p.ms.length} 场</div><div class="tt-r"><b style="color:var(--fan)">樊振东</b> ${p.f} 胜　<b style="color:var(--ma)">马龙</b> ${p.ma} 胜</div>`,e);
+    });
+    n.addEventListener('mouseleave',hideTT);
+  });
+})();
+
+// ---------- CUMULATIVE WIN-RATE LINE ----------
+(function(){
+  const W=980,H=340,padL=44,padR=18,padT=28,padB=42;
+  const iw=W-padL-padR, ih=H-padT-padB;
+  let cum=0; const pts=M.map((m,i)=>{cum+=m[I_W];return {x:i+1,rate:cum/(i+1),m};});
+  const x=i=>padL+ (i-1)/(total-1)*iw;
+  const y=r=>padT+ (1-r)*ih;
+  // year boundaries
+  const yrMarks=[]; let seen={};
+  M.forEach((m,i)=>{if(!seen[m[I_YR]]){seen[m[I_YR]]=1;yrMarks.push({yr:m[I_YR],i:i+1});}});
+
+  let g='';
+  // horizontal gridlines
+  [0,.25,.5,.75,1].forEach(r=>{
+    g+=`<line class="${r===.5?'':'gridline'}" x1="${padL}" x2="${W-padR}" y1="${y(r)}" y2="${y(r)}" ${r===.5?'stroke="var(--muted)" stroke-dasharray="5 5" stroke-width="1.4" opacity="0.6"':''}/>`;
+    g+=`<text class="ax" x="${padL-8}" y="${y(r)+4}" text-anchor="end">${(r*100)}%</text>`;
+  });
+  // year ticks
+  yrMarks.forEach(ym=>{
+    g+=`<line x1="${x(ym.i)}" x2="${x(ym.i)}" y1="${padT}" y2="${H-padB}" stroke="var(--line-2)" stroke-width="1"/>`;
+    g+=`<text class="ax" x="${x(ym.i)}" y="${H-padB+16}" text-anchor="middle">${String(ym.yr).slice(2)}</text>`;
+  });
+  // area + line
+  const linePath=pts.map((p,i)=>`${i?'L':'M'}${x(p.x).toFixed(1)},${y(p.rate).toFixed(1)}`).join(' ');
+  const areaPath=linePath+` L${x(total)},${y(0)} L${x(1)},${y(0)} Z`;
+  g+=`<defs><linearGradient id="fanG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--fan)" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="var(--fan)" stop-opacity="0.02"/></linearGradient></defs>`;
+  g+=`<path d="${areaPath}" fill="url(#fanG)"/>`;
+  g+=`<path d="${linePath}" fill="none" stroke="var(--fan)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>`;
+  // endpoint
+  const last=pts[pts.length-1];
+  g+=`<circle cx="${x(last.x)}" cy="${y(last.rate)}" r="5" fill="var(--fan)" stroke="var(--surface)" stroke-width="2"/>`;
+  g+=`<text x="${x(last.x)-8}" y="${y(last.rate)-10}" text-anchor="end" font-size="12.5" font-weight="700" fill="var(--fan)">${(last.rate*100).toFixed(1)}%</text>`;
+  // hover layer
+  g+=`<rect id="cumHit" x="${padL}" y="${padT}" width="${iw}" height="${ih}" fill="transparent"/>`;
+  g+=`<line id="cumCross" x1="0" x2="0" y1="${padT}" y2="${H-padB}" stroke="var(--fan)" stroke-width="1" opacity="0"/>`;
+  g+=`<circle id="cumDot" r="4.5" fill="var(--fan)" stroke="var(--surface)" stroke-width="2" opacity="0"/>`;
+
+  document.getElementById('cumChart').innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="樊振东累计胜率曲线">${g}</svg>`;
+  const svg=document.querySelector('#cumChart svg');
+  const hit=svg.querySelector('#cumHit'),cross=svg.querySelector('#cumCross'),dot=svg.querySelector('#cumDot');
+  hit.addEventListener('mousemove',e=>{
+    const r=svg.getBoundingClientRect(), sx=(e.clientX-r.left)/r.width*W;
+    let idx=Math.round((sx-padL)/iw*(total-1)); idx=Math.max(0,Math.min(total-1,idx));
+    const p=pts[idx];
+    cross.setAttribute('x1',x(p.x));cross.setAttribute('x2',x(p.x));cross.setAttribute('opacity','0.5');
+    dot.setAttribute('cx',x(p.x));dot.setAttribute('cy',y(p.rate));dot.setAttribute('opacity','1');
+    const w=p.m[I_W]===1;
+    showTT(`<div class="tt-h">第 ${p.x} 场 · ${p.m[I_YR]}.${p.m[I_MD]}</div><div class="tt-r">${p.m[I_EV]}</div><div class="tt-r" style="margin-top:3px">此役 <b>${p.m[I_FS]}:${p.m[I_MS]}</b> · <span style="color:${w?'var(--fan)':'var(--ma)'};font-weight:700">${w?'樊振东胜':'马龙胜'}</span></div><div class="tt-r" style="margin-top:3px">樊振东累计胜率 <b style="color:var(--fan)">${(p.rate*100).toFixed(1)}%</b></div>`,e);
+  });
+  hit.addEventListener('mouseleave',()=>{hideTT();cross.setAttribute('opacity','0');dot.setAttribute('opacity','0');});
+})();
+
+// ---------- YEARLY DIVERGING BARS ----------
+(function(){
+  const years=[...new Set(M.map(m=>m[I_YR]))].sort();
+  const data=years.map(yr=>{
+    const ms=M.filter(m=>m[I_YR]===yr);
+    return {yr,f:ms.filter(m=>m[I_W]===1).length,m:ms.filter(m=>m[I_W]===0).length};
+  });
+  const W=980,H=320,padT=24,padB=34,mid=(H-padT-padB)/2+padT;
+  const n=years.length, gap=14, bw=(W- (n+1)*gap)/n;
+  const maxV=Math.max(...data.map(d=>Math.max(d.f,d.m)));
+  const unit=(mid-padT-8)/maxV;
+  let g='';
+  g+=`<line x1="0" x2="${W}" y1="${mid}" y2="${mid}" class="baseline"/>`;
+  data.forEach((d,i)=>{
+    const bx=gap+i*(bw+gap);
+    const fh=d.f*unit, mh=d.m*unit;
+    // fan up
+    if(d.f>0){g+=`<rect class="ybar" x="${bx}" y="${mid-fh}" width="${bw}" height="${fh}" rx="3" fill="var(--fan)" data-yr="${d.yr}" data-f="${d.f}" data-m="${d.m}"/>`;
+      g+=`<text x="${bx+bw/2}" y="${mid-fh-6}" text-anchor="middle" font-size="12" font-weight="700" fill="var(--fan)">${d.f}</text>`;}
+    // ma down
+    if(d.m>0){g+=`<rect class="ybar" x="${bx}" y="${mid+2}" width="${bw}" height="${mh}" rx="3" fill="var(--ma)" data-yr="${d.yr}" data-f="${d.f}" data-m="${d.m}"/>`;
+      g+=`<text x="${bx+bw/2}" y="${mid+mh+16}" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ma)">${d.m}</text>`;}
+    g+=`<text class="ax" x="${bx+bw/2}" y="${H-8}" text-anchor="middle" font-weight="600">${d.yr}</text>`;
+  });
+  document.getElementById('yearChart').innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="逐年战绩">${g}</svg>`;
+  document.querySelectorAll('#yearChart .ybar').forEach(b=>{
+    b.style.cursor='default';
+    b.addEventListener('mousemove',e=>showTT(`<div class="tt-h">${b.dataset.yr} 年</div><div class="tt-r"><b style="color:var(--fan)">樊振东</b> ${b.dataset.f} 胜　<b style="color:var(--ma)">马龙</b> ${b.dataset.m} 胜</div>`,e));
+    b.addEventListener('mouseleave',hideTT);
+  });
+})();
+
+// ---------- SPLIT: solo vs team ----------
+(function(){
+  const set=(id,v)=>document.getElementById(id).textContent=v;
+  const sTot=solo.length,tTot=team.length;
+  set('soloCap',`共 ${sTot} 场正式单打对决`);
+  set('teamCap',`共 ${tTot} 场团体 / 乒超对决`);
+  set('soloFN',`${soloFan} 胜`); set('soloMN',`${soloMa} 胜`);
+  set('teamFN',`${teamFan} 胜`); set('teamMN',`${teamMa} 胜`);
+  document.getElementById('soloFbar').style.width=(soloFan/sTot*100)+'%';
+  document.getElementById('soloMbar').style.width=(soloMa/sTot*100)+'%';
+  document.getElementById('teamFbar').style.width=(teamFan/tTot*100)+'%';
+  document.getElementById('teamMbar').style.width=(teamMa/tTot*100)+'%';
+  document.getElementById('soloPct').innerHTML=(soloMa/sTot*100).toFixed(0)+'<small>%</small>';
+  document.getElementById('teamPct').innerHTML=(teamFan/tTot*100).toFixed(0)+'<small>%</small>';
+})();
+
+// ---------- DECIDER ----------
+(function(){
+  document.getElementById('decF').textContent=decF;
+  document.getElementById('decM').textContent=decM;
+  document.getElementById('deciderLead').innerHTML=
+    `52 场里有 <b>${dec.length}</b> 场被拖入决胜局。尽管马龙在总战绩上领先，这些"一分定生死"的硬仗却几乎平分秋色——`+
+    `樊振东 <b class="fan">${decF}</b> 胜、马龙 <b class="ma">${decM}</b> 胜。2020 年他连下全锦赛、世界杯两场 4:3 的鏖战，正是这种韧性的写照。`;
+  // clutch chart: overall vs decider win rate for Fan
+  const W=560,H=230,padL=40,padB=44,padT=16,padR=16;
+  const iw=W-padL-padR, ih=H-padT-padB;
+  const bars=[
+    {lab:"全部交手",rate:fanW/total,sub:`${fanW}/${total}`},
+    {lab:"决胜局",rate:decF/dec.length,sub:`${decF}/${dec.length}`},
+  ];
+  const bw=iw/ (bars.length*2);
+  let g='';
+  [0,.25,.5,.75,1].forEach(r=>{const yy=padT+(1-r)*ih;
+    g+=`<line class="gridline" x1="${padL}" x2="${W-padR}" y1="${yy}" y2="${yy}"/>`;
+    g+=`<text class="ax" x="${padL-8}" y="${yy+4}" text-anchor="end">${r*100}%</text>`;});
+  bars.forEach((b,i)=>{
+    const cx=padL+iw*( (i+0.5)/bars.length );
+    const h=b.rate*ih, bx=cx-bw/2, by=padT+ih-h;
+    g+=`<rect x="${bx}" y="${by}" width="${bw}" height="${h}" rx="4" fill="var(--fan)" opacity="${i===1?1:0.55}"/>`;
+    g+=`<text x="${cx}" y="${by-8}" text-anchor="middle" font-size="15" font-weight="800" fill="var(--fan)">${(b.rate*100).toFixed(0)}%</text>`;
+    g+=`<text class="ax" x="${cx}" y="${H-padB+18}" text-anchor="middle" font-weight="600" font-size="12.5">${b.lab}</text>`;
+    g+=`<text class="ax" x="${cx}" y="${H-padB+34}" text-anchor="middle" font-size="11">${b.sub}</text>`;
+  });
+  document.getElementById('clutchChart').innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="樊振东整体与决胜局胜率对比">${g}</svg>`;
+})();
+
+// ---------- MARQUEE big-stage cards ----------
+(function(){
+  const picks=[16,20,31,43,45,48].map(n=>M.find(m=>m[I_N]===n));
+  const tagFor=m=>{
+    if(m[I_EV].includes('世乒赛'))return '世乒赛';
+    if(m[I_EV].includes('世界杯'))return '世界杯';
+    if(m[I_EV].includes('奥运会'))return '奥运会';
+    if(m[I_EV].includes('WTT'))return 'WTT大满贯';
+    return '大赛';
+  };
+  document.getElementById('marquee').innerHTML=picks.map(m=>{
+    const w=m[I_W]===1;
+    return `<div class="mqc ${w?'w':'l'}">
+      <div class="yr">${m[I_YR]} · ${tagFor(m)}</div>
+      <div class="ev">${m[I_EV]}</div>
+      <div class="sc"><span style="color:var(--fan)">${m[I_FS]}</span> <span style="color:var(--muted);font-weight:300">:</span> <span style="color:var(--ma)">${m[I_MS]}</span></div>
+      <div class="res ${w?'w':'l'}">${w?'樊振东胜':'马龙胜'}</div>
+    </div>`;
+  }).join('');
+})();
+
+// ---------- FULL TABLE ----------
+(function(){
+  const tb=document.getElementById('tbody');
+  function render(f){
+    let rows=M;
+    if(f==='solo')rows=M.filter(m=>m[I_TEAM]===0);
+    else if(f==='team')rows=M.filter(m=>m[I_TEAM]===1);
+    else if(f==='fan')rows=M.filter(m=>m[I_W]===1);
+    else if(f==='ma')rows=M.filter(m=>m[I_W]===0);
+    tb.innerHTML=rows.map(m=>{
+      const w=m[I_W]===1;
+      return `<tr>
+        <td class="gm">${m[I_N]}</td>
+        <td>${m[I_YR]}.${m[I_MD]}</td>
+        <td class="ev-c">${m[I_EV]}</td>
+        <td>${m[I_TEAM]===1?'<span class="tag t">团体</span>':'<span class="tag s">单打</span>'}</td>
+        <td class="rescell ${w?'w':'l'}">${m[I_FS]} : ${m[I_MS]}</td>
+        <td class="rescell ${w?'w':'l'}">${w?'樊振东胜':'马龙胜'}</td>
+        <td class="gm">${m[I_G].replace(/,/g,'　')}</td>
+      </tr>`;
+    }).join('');
+  }
+  render('all');
+  document.querySelectorAll('#filters button').forEach(b=>{
+    b.addEventListener('click',()=>{
+      document.querySelectorAll('#filters button').forEach(x=>x.classList.remove('on'));
+      b.classList.add('on'); render(b.dataset.f);
+    });
+  });
+})();
+
+// ---------- AGE: prime-window OFFSET timeline ----------
+(function(){
+  const W=860,H=270,padL=38,padR=30,padT=26;
+  const iw=W-padL-padR;
+  const y0=2011,y1=2026;
+  const X=y=>padL+(y-y0)/(y1-y0)*iw;
+  const maP=[2011.8,2017.8], fanP=[2020,2026], gap=[2017.8,2020];
+  const mby=70,fby=138,bh=34, tickY=212, tickH=25, axisY=254;
+  let g='';
+  g+=`<defs>
+    <linearGradient id="maPrimeFade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="var(--ma)" stop-opacity=".42"/><stop offset=".22" stop-color="var(--ma)"/><stop offset=".88" stop-color="var(--ma)"/><stop offset="1" stop-color="var(--ma)" stop-opacity=".35"/></linearGradient>
+    <linearGradient id="fanPrimeFade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="var(--fan)" stop-opacity=".38"/><stop offset=".16" stop-color="var(--fan)"/><stop offset=".9" stop-color="var(--fan)"/><stop offset="1" stop-color="var(--fan)" stop-opacity=".45"/></linearGradient>
+  </defs>`;
+  // year gridlines + labels
+  for(let yr=y0;yr<=y1;yr++){
+    const strong=yr===2018||yr===2020;
+    g+=`<line x1="${X(yr)}" x2="${X(yr)}" y1="${padT}" y2="${tickY+tickH}" stroke="${strong?'var(--ink)':'var(--line-2)'}" stroke-width="${strong?1.4:1}" opacity="${strong?.34:.55}"/>`;
+    g+=`<text class="ax" x="${X(yr)}" y="${axisY}" text-anchor="middle" font-size="10">'${String(yr).slice(2)}</text>`;
+  }
+  // gap shaded column: the emotional center of the graphic
+  g+=`<rect x="${X(gap[0])}" y="${padT}" width="${(X(gap[1])-X(gap[0])).toFixed(1)}" height="${tickY+tickH-padT}" fill="var(--ink)" opacity="0.08"/>`;
+  g+=`<line x1="${X(gap[0])}" x2="${X(gap[0])}" y1="${padT}" y2="${tickY+tickH}" stroke="var(--muted)" stroke-dasharray="3 4" stroke-width="1" opacity="0.6"/>`;
+  g+=`<line x1="${X(gap[1])}" x2="${X(gap[1])}" y1="${padT}" y2="${tickY+tickH}" stroke="var(--muted)" stroke-dasharray="3 4" stroke-width="1" opacity="0.6"/>`;
+  const gcx=(X(gap[0])+X(gap[1]))/2;
+  g+=`<text x="${gcx}" y="58" text-anchor="middle" font-size="30" font-family="Impact, Arial Black" font-weight="950" fill="var(--ink)" opacity=".78">0</text>`;
+  g+=`<text x="${gcx}" y="80" text-anchor="middle" font-size="12" font-weight="950" fill="var(--ink)">同处巅峰交手</text>`;
+  g+=`<text x="${gcx}" y="98" text-anchor="middle" font-size="11" font-weight="800" fill="var(--muted)">约 2 年空档</text>`;
+  // lane labels
+  g+=`<text x="${padL}" y="${mby-15}" font-size="12" font-weight="950" fill="var(--ma)">MA LONG PRIME WINDOW</text>`;
+  g+=`<text x="${padL}" y="${fby-15}" font-size="12" font-weight="950" fill="var(--fan)">FAN ZHENDONG PRIME WINDOW</text>`;
+  // Ma prime bar (red)
+  g+=`<rect x="${X(maP[0])}" y="${mby}" width="${(X(maP[1])-X(maP[0])).toFixed(1)}" height="${bh}" fill="url(#maPrimeFade)"/>`;
+  g+=`<polygon points="${X(maP[1])},${mby} ${X(maP[1])+24},${mby+bh/2} ${X(maP[1])},${mby+bh}" fill="var(--ma)"/>`;
+  g+=`<text x="${(X(maP[0])+X(maP[1]))/2}" y="${mby+bh/2+5}" text-anchor="middle" font-size="13" font-weight="950" fill="#fff">马龙 23-28 岁</text>`;
+  // Fan prime bar (blue)
+  g+=`<polygon points="${X(fanP[0])},${fby} ${X(fanP[0])-24},${fby+bh/2} ${X(fanP[0])},${fby+bh}" fill="var(--fan)"/>`;
+  g+=`<rect x="${X(fanP[0])}" y="${fby}" width="${(X(fanP[1])-X(fanP[0])).toFixed(1)}" height="${bh}" fill="url(#fanPrimeFade)"/>`;
+  g+=`<text x="${(X(fanP[0])+X(fanP[1]))/2}" y="${fby+bh/2+5}" text-anchor="middle" font-size="13" font-weight="950" fill="#fff">樊振东 23-28 岁</text>`;
+  // visual handoff cue
+  g+=`<path d="M ${X(maP[1])+28} ${mby+bh/2} C ${X(2018.6)} ${mby+58}, ${X(2019.2)} ${fby-42}, ${X(fanP[0])-28} ${fby+bh/2}" fill="none" stroke="var(--ink)" stroke-width="2.2" stroke-dasharray="4 7" opacity=".55"/>`;
+  g+=`<text x="${X(2018.92)}" y="${(mby+fby)/2+7}" text-anchor="middle" font-size="12" font-weight="950" fill="var(--ink)">没有交接点</text>`;
+  // match ticks (visible + transparent hit)
+  g+=`<text class="ax" x="${padL}" y="${tickY-10}" font-size="11" font-weight="800" fill="var(--muted)">52 场交手压在两段巅峰错位之间</text>`;
+  M.forEach(m=>{
+    const mon=parseInt(m[I_MD].split('.')[0])||6;
+    const yr=m[I_YR]+(mon-1)/12, xx=X(yr).toFixed(1), w=m[I_W]===1;
+    const h=w?tickH:tickH-7;
+    g+=`<line x1="${xx}" x2="${xx}" y1="${tickY+tickH-h}" y2="${tickY+tickH}" stroke="${w?'var(--fan)':'var(--ma)'}" stroke-width="4"/>`;
+    g+=`<line class="pgtick" x1="${xx}" x2="${xx}" y1="${tickY}" y2="${tickY+tickH}" stroke="transparent" stroke-width="12" data-n="${m[I_N]}" data-t="${m[I_YR]}.${m[I_MD]}" data-e="${m[I_EV]}" data-s="${m[I_FS]}:${m[I_MS]}" data-w="${w}" style="cursor:default"/>`;
+  });
+  document.getElementById('primeGap').innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="两人巅峰期错位时间轴">${g}</svg>`;
+  document.querySelectorAll('#primeGap .pgtick').forEach(t=>{
+    t.addEventListener('mousemove',e=>{const w=t.dataset.w==='true';showTT(`<div class="tt-h">第 ${t.dataset.n} 场 · ${t.dataset.t}</div><div class="tt-r">${t.dataset.e}</div><div class="tt-r" style="margin-top:3px"><b>${t.dataset.s}</b> · <span style="color:${w?'var(--fan)':'var(--ma)'};font-weight:700">${w?'樊振东胜':'马龙胜'}</span></div>`,e);});
+    t.addEventListener('mouseleave',hideTT);
+  });
+})();
+
+// ---------- AGE: dual-age line + prime band ----------
+(function(){
+  const W=860,H=390,padL=46,padR=62,padT=28,padB=48;
+  const iw=W-padL-padR, ih=H-padT-padB;
+  const aMin=14,aMax=35;
+  const x=i=>padL+(i-1)/(total-1)*iw;
+  const xYear=yr=>padL+(Math.max(2013,Math.min(2023,yr))-2013)/(2023-2013)*iw;
+  const y=a=>padT+(1-(a-aMin)/(aMax-aMin))*ih;
+  let g='';
+  g+=`<defs><linearGradient id="ageGapG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--ma)" stop-opacity=".12"/><stop offset="1" stop-color="var(--fan)" stop-opacity=".16"/></linearGradient></defs>`;
+  // prime band 23-28
+  g+=`<rect x="${padL}" y="${y(28)}" width="${iw}" height="${(y(23)-y(28)).toFixed(1)}" fill="var(--grid)" opacity="0.72"/>`;
+  g+=`<line x1="${padL}" x2="${W-padR}" y1="${y(28)}" y2="${y(28)}" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 4" opacity="0.5"/>`;
+  g+=`<line x1="${padL}" x2="${W-padR}" y1="${y(23)}" y2="${y(23)}" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 4" opacity="0.5"/>`;
+  g+=`<text class="ax" x="${W-padR-6}" y="${y(28)+15}" text-anchor="end" font-size="11" font-weight="900" fill="var(--muted)">巅峰区间 23-28 岁</text>`;
+  // y ticks
+  [15,20,23,25,28,30,35].forEach(a=>{g+=`<text class="ax" x="${padL-8}" y="${y(a)+4}" text-anchor="end" font-weight="${a===23||a===28?'900':'600'}">${a}</text>`;});
+  // year x labels
+  let seen={};M.forEach((m,i)=>{if(!seen[m[I_YR]]){seen[m[I_YR]]=1;g+=`<text class="ax" x="${x(i+1)}" y="${H-padB+16}" text-anchor="middle">${String(m[I_YR]).slice(2)}</text>`;}});
+  // lines
+  const maPath=M.map((m,i)=>`${i?'L':'M'}${x(i+1).toFixed(1)},${y(m[I_MA]).toFixed(1)}`).join(' ');
+  const faPath=M.map((m,i)=>`${i?'L':'M'}${x(i+1).toFixed(1)},${y(m[I_FA]).toFixed(1)}`).join(' ');
+  const areaTop=M.map((m,i)=>`${i?'L':'M'}${x(i+1).toFixed(1)},${y(m[I_MA]).toFixed(1)}`).join(' ');
+  const areaBot=M.slice().reverse().map((m,ri)=>{const i=total-1-ri;return `L${x(i+1).toFixed(1)},${y(m[I_FA]).toFixed(1)}`;}).join(' ');
+  g+=`<path d="${areaTop} ${areaBot} Z" fill="url(#ageGapG)"/>`;
+  g+=`<text x="${padL+iw*.42}" y="${y(30.7)}" text-anchor="middle" font-size="34" font-family="Impact, Arial Black" font-weight="950" fill="var(--ink)" opacity=".16">9 YEARS APART</text>`;
+  g+=`<path d="${maPath}" fill="none" stroke="var(--ma)" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"/>`;
+  g+=`<path d="${faPath}" fill="none" stroke="var(--fan)" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.95"/>`;
+  // mark the moments when each player enters/exits the prime band
+  const markers=[
+    {x:xYear(2013),yy:y(24),lab:"已在巅峰",col:"var(--ma)",anchor:"start"},
+    {x:xYear(2017.8),yy:y(28),lab:"马龙离开巅峰",col:"var(--ma)",anchor:"end"},
+    {x:xYear(2020),yy:y(23),lab:"樊振东进入巅峰",col:"var(--fan)",anchor:"start"}
+  ];
+  markers.forEach(o=>{
+    g+=`<circle cx="${o.x}" cy="${o.yy}" r="5" fill="${o.col}" stroke="var(--surface)" stroke-width="2"/>`;
+    g+=`<text x="${o.x+(o.anchor==='start'?9:-9)}" y="${o.yy-9}" text-anchor="${o.anchor}" font-size="11" font-weight="950" fill="${o.col}">${o.lab}</text>`;
+  });
+  // end labels
+  g+=`<text x="${x(total)+10}" y="${y(M[total-1][I_MA])+4}" font-size="13" font-weight="950" fill="var(--ma)">马龙 ${M[total-1][I_MA]}</text>`;
+  g+=`<text x="${x(total)+10}" y="${y(M[total-1][I_FA])+4}" font-size="13" font-weight="950" fill="var(--fan)">樊 ${M[total-1][I_FA]}</text>`;
+  // winner dots on Fan line
+  M.forEach((m,i)=>{const w=m[I_W]===1;g+=`<circle class="agedot" cx="${x(i+1).toFixed(1)}" cy="${y(m[I_FA]).toFixed(1)}" r="${w?4.2:3.7}" fill="${w?'var(--fan)':'var(--ma)'}" stroke="var(--surface)" stroke-width="1.4" data-i="${i}" style="cursor:default"/>`;});
+  g+=`<text x="${padL}" y="${H-10}" font-size="11" font-weight="800" fill="var(--muted)">圆点颜色代表该场胜方，位置落在樊振东年龄线上；两条线之间的色带就是始终存在的 9 岁差距。</text>`;
+  document.getElementById('ageChart').innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="两人年龄对照与巅峰区间">${g}</svg>`;
+  document.querySelectorAll('#ageChart .agedot').forEach(d=>{
+    d.addEventListener('mousemove',e=>{const m=M[+d.dataset.i];const w=m[I_W]===1;
+      showTT(`<div class="tt-h">第 ${m[I_N]} 场 · ${m[I_YR]}.${m[I_MD]}</div><div class="tt-r">${m[I_EV]}</div><div class="tt-r" style="margin-top:3px">樊振东 <b>${m[I_FA]}</b> 岁　马龙 <b>${m[I_MA]}</b> 岁</div><div class="tt-r" style="margin-top:3px">${m[I_FS]}:${m[I_MS]} · <span style="color:${w?'var(--fan)':'var(--ma)'};font-weight:700">${w?'樊振东胜':'马龙胜'}</span></div>`,e);});
+    d.addEventListener('mouseleave',hideTT);
+  });
+})();
+
+// ---------- AGE: three acts ----------
+(function(){
+  const acts=[
+    {t:"第一幕",name:"少年 vs 巅峰",desc:"樊 15–19 岁 · 马 24–28 岁",filter:m=>m[I_FA]<=19},
+    {t:"第二幕",name:"上升 vs 老兵",desc:"樊 20–22 岁 · 马 28–31 岁",filter:m=>m[I_FA]>=20&&m[I_FA]<=22},
+    {t:"第三幕",name:"当打 vs 老将",desc:"樊 23–26 岁 · 马 31–34 岁",filter:m=>m[I_FA]>=23},
+  ];
+  document.getElementById('ageActs').innerHTML=acts.map(a=>{
+    const g=M.filter(a.filter),w=g.filter(m=>m[I_W]===1).length,rate=Math.round(w/g.length*100);
+    return `<div class="mqc">
+      <div class="yr">${a.t} · ${a.desc}</div>
+      <div class="ev">${a.name}</div>
+      <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:11px">
+        <span style="font-size:42px;font-weight:800;color:var(--fan);line-height:1">${rate}%</span>
+        <span style="font-size:13px;color:var(--muted)">樊振东胜率</span>
+      </div>
+      <div class="track"><div class="fillF" style="width:${rate}%"></div><div class="fillM" style="width:${100-rate}%"></div></div>
+      <div style="font-size:12.5px;color:var(--muted);margin-top:9px">${w} 胜 ${g.length-w} 负 · 共 ${g.length} 场</div>
+    </div>`;
+  }).join('');
+  document.getElementById('ageHeadline').innerHTML=
+    `<b>宿命的注脚：</b>正因为差了 9 岁，两人的巅峰年龄（23–28 岁）在这 52 场中<b>从未有过一次重叠</b>。`+
+    `樊振东最好的年华，对上的已是 31 岁后的马龙；而当马龙最强时，樊振东还没长大。即便如此，老马依旧笑到最后——这或许正是这段对决最令人唏嘘之处。`;
+})();
+
+window.addEventListener('scroll',()=>{if(tt.style.opacity==='1')hideTT();},{passive:true});
+</script>
+</body>
+</html>
